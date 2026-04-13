@@ -1,17 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Product Store</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanskruti Gruh Udyog</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#fff8f0;
+      color:#222;
+    }
+    header{
+      background: #ff6b35;
+      color:white;
+      padding:20px;
+      text-align:center;
+    }
+    header h1{
+      margin:0;
+      font-size:28px;
+    }
+    header p{
+      margin:5px 0 0;
+      font-size:16px;
+    }
+    .container{
+      padding:20px;
+      max-width:1000px;
+      margin:auto;
+    }
+    .section-title{
+      font-size:22px;
+      margin-top:20px;
+      margin-bottom:10px;
+      color:#ff6b35;
+    }
+    .products{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap:15px;
+    }
+    .card{
+      background:white;
+      padding:15px;
+      border-radius:12px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.1);
+      overflow:hidden;
+    }
+    .card img{
+      width:100%;
+      height:180px;
+      object-fit:cover;
+      border-radius:10px;
+    }
+    .card h3{
+      margin:10px 0 0;
+      font-size:18px;
+      color:#333;
+    }
+    .price{
+      font-size:16px;
+      font-weight:bold;
+      margin-top:8px;
+      color:green;
+    }
+    .desc{
+      font-size:14px;
+      margin-top:8px;
+      color:#555;
+    }
+    .btn{
+      display:inline-block;
+      margin-top:12px;
+      padding:10px 14px;
+      background:#25D366;
+      color:white;
+      text-decoration:none;
+      border-radius:10px;
+      font-weight:bold;
+      font-size:14px;
+    }
+    .btn:hover{
+      background:#1ea955;
+    }
+    .info-box{
+      background:white;
+      padding:15px;
+      border-radius:12px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.1);
+      margin-top:15px;
+    }
+    footer{
+      text-align:center;
+      padding:15px;
+      background:#222;
+      color:white;
+      margin-top:30px;
+      font-size:14px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Welcome to My Shop</h1>
-  <p>We sell best products online</p>
 
-  <h2>Products</h2>
-  <p>Product 1 - ₹499</p>
-  <p>Product 2 - ₹799</p>
+  <header>
+    <h1>Sanskruti Gruh Udyog</h1>
+    <p>Fresh Homemade Products 🌞</p>
+  </header>
 
-  <h2>Order Now</h2>
-  <a href="https://wa.me/91YOURNUMBER">WhatsApp Order</a>
+  <div class="container">
+
+    <h2 class="section-title">🌿 Our Products</h2>
+
+    <div class="products">
+
+      <div class="card">
+        <img src="kurdai.jpg.jpeg" alt="Kurdai">
+        <h3>Kurdai</h3>
+        <p class="desc">Homemade crispy kurdai. Best for summer snacks.</p>
+        <p class="price">₹500</p>
+        <a class="btn" href="https://wa.me/919325002744?text=Hello%20Sanskruti%20Gruh%20Udyog%2C%20I%20want%20to%20order%20Kurdai%20(₹500).">Order on WhatsApp</a>
+      </div>
+
+      <div class="card">
+        <img src="kharvadi.jpg.jpg" alt="Kharvadi">
+        <h3>Kharvadi</h3>
+        <p class="desc">Tasty homemade kharvadi made with traditional method.</p>
+        <p class="price">₹200</p>
+        <a class="btn" href="https://wa.me/919325002744?text=Hello%20Sanskruti%20Gruh%20Udyog%2C%20I%20want%20to%20order%20Kharvadi%20(₹200).">Order on WhatsApp</a>
+      </div>
+
+      <div class="card">
+        <img src="papad.jpg.jpeg" alt="Udid Papad">
+        <h3>Udid Papad</h3>
+        <p class="desc">Fresh homemade udid papad, crispy and delicious.</p>
+        <p class="price">₹350</p>
+        <a class="btn" href="https://wa.me/919325002744?text=Hello%20Sanskruti%20Gruh%20Udyog%2C%20I%20want%20to%20order%20Udid%20Papad%20(₹350).">Order on WhatsApp</a>
+      </div>
+
+    </div>
+
+    <h2 class="section-title">📞 Contact & Order</h2>
+
+    <div class="info-box">
+      <p><b>WhatsApp Order:</b> +91 9325002744</p>
+      <p><b>Delivery:</b> Home Delivery / Pickup Available</p>
+      <p><b>Payment:</b> UPI / Cash</p>
+    </div>
+
+    <h2 class="section-title">💳 UPI Payment</h2>
+
+    <div class="info-box">
+      <p><b>UPI ID:</b> 9325002744@ptyes</p>
+      <p>After payment, send screenshot on WhatsApp.</p>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 Sanskruti Gruh Udyog | Homemade Products
+  </footer>
+
 </body>
 </html>
